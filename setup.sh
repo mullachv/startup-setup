@@ -49,3 +49,6 @@ ln -sb startup-dotfiles/.bashrc .
 ln -sb startup-dotfiles/.bashrc_custom .
 ln -sf startup-dotfiles/.emacs.d .
 
+git config --global user.name "Vikram Mullachery"
+git config --global user.email mullachv@gmail.com
+
