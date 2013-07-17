@@ -36,16 +36,16 @@ sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
 
 # git pull and install dotfiles as well
 cd $HOME
-if [ -d ./dotfiles/ ]; then
-    mv dotfiles dotfiles.old
+if [ -d ./startup-dotfiles/ ]; then
+    mv startup-dotfiles startup-dotfiles.old
 fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
 git clone https://github.com/mullachv/startup-dotfiles.git
-ln -sb dotfiles/.screenrc .
-ln -sb dotfiles/.bash_profile .
-ln -sb dotfiles/.bashrc .
-ln -sb dotfiles/.bashrc_custom .
-ln -sf dotfiles/.emacs.d .
+ln -sb startup-dotfiles/.screenrc .
+ln -sb startup-dotfiles/.bash_profile .
+ln -sb startup-dotfiles/.bashrc .
+ln -sb startup-dotfiles/.bashrc_custom .
+ln -sf startup-dotfiles/.emacs.d .
 
