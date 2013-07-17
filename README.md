@@ -9,7 +9,7 @@ follows:
 cd $HOME
 sudo apt-get install -y git-core
 git clone https://github.com/mullachv/startup-setup.git
-./setup/setup.sh   
+./startup-setup/setup.sh   
 ```
 
 See also http://github.com/mullachv/startup-dotfiles and
