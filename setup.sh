@@ -5,10 +5,10 @@
 # Install nodejs
 # Added by VSM
 sudo apt-get update
-sudo apt-get install python-software-properties python g++ make
+sudo apt-get install -y python-software-properties python g++ make
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
 
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
@@ -49,6 +49,9 @@ ln -sb startup-dotfiles/.bashrc .
 ln -sb startup-dotfiles/.bashrc_custom .
 ln -sf startup-dotfiles/.emacs.d .
 
+###
 git config --global user.name "Vikram Mullachery"
 git config --global user.email mullachv@gmail.com
 
+### Install heroku toolbelt
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
